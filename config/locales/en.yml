@@ -20,4 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: Music Library
+  app_description: A place to keep and organise all of your Music
+
+  home:
+   home:
+    title: Music Library
+    welcome: A web application to organise your music collection developed in Ruby on Rails

@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  year: 1
+  year: 1901
   label: MyString
 
 two:
-  name: MyString
-  year: 1
-  label: MyString
+  name: MyString2
+  year: 1902
+  label: MyString2

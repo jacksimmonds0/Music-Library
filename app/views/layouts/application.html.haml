@@ -15,6 +15,5 @@
     = javascript_include_tag 'modernizr'
     = csrf_meta_tags
 
-  %body
-
-    = yield
+  %body= render 'shared/navbar'
+  = yield

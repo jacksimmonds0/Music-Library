@@ -25,5 +25,13 @@ en:
 
   home:
    home:
-    title: Music Library
+    title: Home
     welcome: A web application to organise your music collection developed in Ruby on Rails
+
+  shared:
+   _navbar:
+    artists: Artists
+    albums: Albums
+    songs: Songs
+    genres: Genres
+    contact: Contact

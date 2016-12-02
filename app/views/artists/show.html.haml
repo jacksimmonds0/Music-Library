@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @artist.name
+%p
+  %b Year:
+  = @artist.year
+%p
+  %b Label:
+  = @artist.label
+
+= link_to 'Edit', edit_artist_path(@artist)
+\|
+= link_to 'Back', artists_path

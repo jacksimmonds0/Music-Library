@@ -28,6 +28,20 @@ en:
     title: Home
     welcome: A web application to organise your music collection developed in Ruby on Rails
 
+   contact:
+    title: Contact Us
+    contact_us: Complete the following form in order to get in contact with us
+
+    name: "Name:"
+    enter_name: Enter your name
+    email: "Email:"
+    enter_email: Enter your email address
+    telephone: "Telephone:"
+    enter_telephone: Enter your telephone number
+    message: "Message:"
+    enter_message: What do you want to say?
+    submit: Submit
+
   shared:
    _navbar:
     artists: Artists

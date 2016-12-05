@@ -3,6 +3,8 @@ require 'test_helper'
 class AlbumsControllerTest < ActionController::TestCase
   setup do
     @album = albums(:one)
+    @artist = artists(:one)
+    @genre = genres(:one)
   end
 
   test "should get index" do
@@ -12,13 +14,13 @@ class AlbumsControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, artist_id: @artist, genre_id: @genre
     assert_response :success
   end
 
   test "should create album" do
     assert_difference('Album.count') do
-      post :create, album: { artist_id: @album.artist_id, genre_id: @album.genre_id, name: @album.name, tracks: @album.tracks, year: @album.year }
+      post :create, album: { artist_id: @artist, genre_id: @genre, name: @album.name, tracks: @album.tracks, year: @album.year }
     end
 
     assert_redirected_to album_path(assigns(:album))
@@ -35,7 +37,7 @@ class AlbumsControllerTest < ActionController::TestCase
   end
 
   test "should update album" do
-    patch :update, id: @album, album: { artist_id: @album.artist_id, genre_id: @album.genre_id, name: @album.name, tracks: @album.tracks, year: @album.year }
+    patch :update, id: @album, album: { artist_id: @artist, genre_id: @genre, name: @album.name, tracks: @album.tracks, year: @album.year }
     assert_redirected_to album_path(assigns(:album))
   end
 

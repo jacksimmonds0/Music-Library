@@ -8,10 +8,10 @@
 
   .field
     = f.label :artist
-    = f.text_field :artist
+    = f.collection_select :artist_id, Artist.all, :id, :name
   .field
     = f.label :genre
-    = f.text_field :genre
+    = f.collection_select :genre_id, Genre.all, :id, :genre
   .field
     = f.label :name
     = f.text_field :name

@@ -1,5 +1,7 @@
 class AlbumsController < ApplicationController
   before_action :set_album, only: [:show, :edit, :update, :destroy]
+  before_action :set_artist, only: [:new, :create]
+  before_action :set_genre, only: [:new, :create]
 
   # GET /albums
   # GET /albums.json
@@ -65,6 +67,14 @@ class AlbumsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_album
       @album = Album.find(params[:id])
+    end
+
+    def set_artist
+      @artist = Artist.find_by(id: params[:artist_id]) || Artist.find(album_params[:artist_id])
+    end
+
+    def set_genre
+      @genre = Genre.find_by(id: params[:genre_id]) || Genre.find(album_params[:genre_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

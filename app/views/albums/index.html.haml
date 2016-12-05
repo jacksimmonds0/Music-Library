@@ -15,8 +15,8 @@
   %tbody
     - @albums.each do |album|
       %tr
-        %td= album.artist
-        %td= album.genre
+        %td= album.artist.name
+        %td= album.genre.genre
         %td= album.name
         %td= album.year
         %td= album.tracks

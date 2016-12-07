@@ -13,7 +13,7 @@
   %tbody
     - @songs.each do |song|
       %tr
-        %td= song.album
+        %td= song.album.name
         %td= song.name
         %td= song.duration
         %td= link_to 'Show', song

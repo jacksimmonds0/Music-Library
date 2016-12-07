@@ -13,7 +13,7 @@ class SongsControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, album_id: @album
     assert_response :success
   end
 

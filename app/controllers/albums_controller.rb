@@ -1,7 +1,6 @@
 class AlbumsController < ApplicationController
   before_action :set_album, only: [:show, :edit, :update, :destroy]
-  before_action :set_artist, only: [:new, :create]
-  before_action :set_genre, only: [:new, :create]
+  
 
   # GET /albums
   # GET /albums.json

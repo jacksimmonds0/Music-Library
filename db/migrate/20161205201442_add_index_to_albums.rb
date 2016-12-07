@@ -1,4 +1,5 @@
 class AddIndexToAlbums < ActiveRecord::Migration
   def change
-  end
+  	add_index :albums, :name, unique: true
+  endrail
 end

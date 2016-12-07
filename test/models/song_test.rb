@@ -27,7 +27,7 @@ class SongTest < ActiveSupport::TestCase
   	assert song.valid?
   end
 
-  test 'testing the duration regex incorrect seconds' do
+  test 'testing the duration regex invalid seconds' do
   	song = Song.new
 
   	song.name = "Song"
@@ -38,7 +38,7 @@ class SongTest < ActiveSupport::TestCase
   	refute song.valid?
   end
 
-  test 'testing the duration regex incorrect minutes' do
+  test 'testing the duration regex invalid minutes' do
   	song = Song.new
 
   	song.name = "Song"

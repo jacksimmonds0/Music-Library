@@ -1,5 +1,7 @@
 %p#notice= notice
 
+= image_tag @album.image.url(:medium)
+
 %p
   %b Artist:
   = @album.artist.name
@@ -14,7 +16,7 @@
   = @album.year
 %p
   %b Tracks:
-  = @album.tracks
+  = @album.total_songs
 
 = link_to 'Edit', edit_album_path(@album)
 \|

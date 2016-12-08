@@ -23,6 +23,12 @@ en:
   app_title: Music Library
   app_description: A place to keep and organise all of your Music
 
+  artists: Artists
+  albums: Albums
+  songs: Songs
+  genres: Genres
+  contact: Contact
+
   home:
    home:
     title: Home
@@ -46,10 +52,3 @@ en:
      no_email: You must supply an email address
      email_sent: Thank you. We will be in touch shortly.
 
-  shared:
-   _navbar:
-    artists: Artists
-    albums: Albums
-    songs: Songs
-    genres: Genres
-    contact: Contact

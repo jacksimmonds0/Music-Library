@@ -20,6 +20,7 @@
         %td= album.name
         %td= album.year
         %td= album.total_songs
+        %td= image_tag album.image.url(:thumb)
         %td= link_to 'Show', album
         %td= link_to 'Edit', edit_album_path(album)
         %td= link_to 'Destroy', album, :method => :delete, :data => { :confirm => 'Are you sure?' }

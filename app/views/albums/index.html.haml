@@ -19,7 +19,7 @@
         %td= album.genre.genre
         %td= album.name
         %td= album.year
-        %td= album.tracks
+        %td= album.total_songs
         %td= link_to 'Show', album
         %td= link_to 'Edit', edit_album_path(album)
         %td= link_to 'Destroy', album, :method => :delete, :data => { :confirm => 'Are you sure?' }

@@ -16,9 +16,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-	background-image: url(asset-path('orange-background.jpg'));
+
+pre {
+	margin: 10px;
+	padding: 10px;
 }
+
+h1 {
+	text-transform: uppercase;
+}
+
+body {
+	/* background-image: url(asset-path('orange-background.jpg')); */
+}
+
 
 .nav.navbar-nav.navbar-left li a span{
     color: black;

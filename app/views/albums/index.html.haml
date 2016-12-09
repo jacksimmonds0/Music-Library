@@ -1,13 +1,14 @@
-%h1 Listing albums
+%h1= t('listing') + " " + t('shared.albums')
 
 %table
   %thead
     %tr
-      %th Artist
-      %th Genre
-      %th Name
-      %th Year
-      %th Tracks
+      %th= t('artist')
+      %th= t('genre')
+      %th= t('name')
+      %th= t('year')
+      %th= t('albums.tracks')
+      %th= t('albums.artwork')
       %th
       %th
       %th
@@ -21,10 +22,10 @@
         %td= album.year
         %td= album.total_songs
         %td= image_tag album.image.url(:thumb)
-        %td= link_to 'Show', album
-        %td= link_to 'Edit', edit_album_path(album)
-        %td= link_to 'Destroy', album, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t('show'), album
+        %td= link_to t('edit'), edit_album_path(album)
+        %td= link_to t('destroy'), album, :method => :delete, :data => { :confirm => t('confirm_message') }
 
 %br
 
-= link_to 'New Album', new_album_path
+= link_to t('new') + " " + t('album'), new_album_path

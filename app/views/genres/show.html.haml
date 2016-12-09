@@ -1,9 +1,9 @@
 %p#notice= notice
 
 %p
-  %b Genre:
+  %b= t('genre') + ":"
   = @genre.genre
 
-= link_to 'Edit', edit_genre_path(@genre)
+= link_to t('edit'), edit_genre_path(@genre)
 \|
-= link_to 'Back', genres_path
+= link_to t('back'), genres_path

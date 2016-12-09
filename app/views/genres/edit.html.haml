@@ -1,7 +1,7 @@
-%h1 Editing genre
+%h1= t('editing') + " " + t('genre')
 
 = render 'form'
 
-= link_to 'Show', @genre
+= link_to t('show'), @genre
 \|
-= link_to 'Back', genres_path
+= link_to t('back'), genres_path

@@ -1,15 +1,15 @@
 %p#notice= notice
 
 %p
-  %b Album:
+  %b= t('album') + ":"
   = @song.album.name
 %p
-  %b Name:
+  %b= t('name') + ":"
   = @song.name
 %p
-  %b Duration:
+  %b= t('songs.duration') + ":"
   = @song.duration
 
-= link_to 'Edit', edit_song_path(@song)
+= link_to t('edit'), edit_song_path(@song)
 \|
-= link_to 'Back', songs_path
+= link_to t('back'), songs_path

@@ -21,13 +21,28 @@
 
 en:
   app_title: Music Library
-  app_description: A place to keep and organise all of your Music
+  app_description: A place to keep and organise all of your music
 
-  artists: Artists
-  albums: Albums
-  songs: Songs
-  genres: Genres
-  contact: Contact
+  artist: Artist
+  album: Album
+  song: Song
+  genre: Genre
+
+  edit: Edit
+  back: Back
+  show: Show
+
+  save: Save
+  destroy: Destroy
+  editing: Editing
+  listing: Listing
+  new: New
+  confirm_message: Are you sure?
+
+  incorrect_duration: " is invalid, must be input in the format of mm:ss"
+
+  name: Name
+  year: Year
 
   home:
    home:
@@ -51,4 +66,25 @@ en:
     request_contact:
      no_email: You must supply an email address
      email_sent: Thank you. We will be in touch shortly.
+
+  albums:
+   artwork: Artwork
+   year: Year
+   tracks: Tracks
+
+  artists:
+   label: Label
+   
+  songs:
+   duration: Duration
+
+  shared:
+   artists: Artists
+   albums: Albums
+   songs: Songs
+   genres: Genres
+   contact: Contact
+
+   
+    
 

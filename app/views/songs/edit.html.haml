@@ -1,7 +1,7 @@
-%h1 Editing song
+%h1= t('editing') + " " + t('song')
 
 = render 'form'
 
-= link_to 'Show', @song
+= link_to t('show'), @song
 \|
-= link_to 'Back', songs_path
+= link_to t('back'), songs_path

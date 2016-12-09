@@ -3,21 +3,21 @@
 = image_tag @album.image.url(:medium)
 
 %p
-  %b Artist:
+  %b= t('artist') + ":"
   = @album.artist.name
 %p
-  %b Genre:
+  %b= t('genre') + ":"
   = @album.genre.genre
 %p
-  %b Name:
+  %b= t('albums.name') + ":"
   = @album.name
 %p
-  %b Year:
+  %b= t('year') + ":"
   = @album.year
 %p
-  %b Tracks:
+  %b= t('albums.tracks') + ":"
   = @album.total_songs
 
-= link_to 'Edit', edit_album_path(@album)
+= link_to t('edit'), edit_album_path(@album)
 \|
-= link_to 'Back', albums_path
+= link_to t('back'), albums_path

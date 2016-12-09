@@ -1,7 +1,7 @@
-%h1 Editing artist
+%h1= t('editing') + " " + t('artist')
 
 = render 'form'
 
-= link_to 'Show', @artist
+= link_to t('show'), @artist
 \|
-= link_to 'Back', artists_path
+= link_to t('back'), artists_path

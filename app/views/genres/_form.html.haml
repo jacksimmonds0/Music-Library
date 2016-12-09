@@ -7,7 +7,7 @@
           %li= msg
 
   .field
-    = f.label :genre
+    = f.label t('genre') + ":"
     = f.text_field :genre
   .actions
-    = f.submit 'Save'
+    = f.submit t('save')

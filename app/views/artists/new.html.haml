@@ -1,5 +1,5 @@
-%h1 New artist
+%h1= t('new') + " " + t('artist')
 
 = render 'form'
 
-= link_to 'Back', artists_path
+= link_to t('back'), artists_path

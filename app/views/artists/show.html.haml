@@ -1,15 +1,15 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b= t('name') + ":"
   = @artist.name
 %p
-  %b Year:
+  %b= t('year') + ":"
   = @artist.year
 %p
-  %b Label:
+  %b= t('artists.label')
   = @artist.label
 
-= link_to 'Edit', edit_artist_path(@artist)
+= link_to t('edit'), edit_artist_path(@artist)
 \|
-= link_to 'Back', artists_path
+= link_to t('back'), artists_path

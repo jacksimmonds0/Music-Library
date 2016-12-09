@@ -1,11 +1,11 @@
-%h1 Listing songs
+%h1= t('listing') + " " + t('shared.songs')
 
 %table
   %thead
     %tr
-      %th Album
-      %th Name
-      %th Duration
+      %th= t('album')
+      %th= t('name')
+      %th= t('songs.duration')
       %th
       %th
       %th
@@ -16,10 +16,10 @@
         %td= song.album.name
         %td= song.name
         %td= song.duration
-        %td= link_to 'Show', song
-        %td= link_to 'Edit', edit_song_path(song)
-        %td= link_to 'Destroy', song, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t('show'), song
+        %td= link_to t('edit'), edit_song_path(song)
+        %td= link_to t('destroy'), song, :method => :delete, :data => { :confirm => t('confirm_message') }
 
 %br
 
-= link_to 'New Song', new_song_path
+= link_to t('new') + " " + t('song'), new_song_path

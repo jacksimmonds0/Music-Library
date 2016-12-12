@@ -16,22 +16,30 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$color1: #FFB75E;
+$color2: #ED8F03;
 
-pre {
+body {
+	/*font-family: $font;*/
+	/*background-color: $color;*/
 	margin: 10px;
-	padding: 10px;
+
+	/* Gradient background taken from http://uigradients.com/#LightOrange */
+	background: $color1; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, $color1 , $color2); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, $color1 , $color2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
 	text-transform: uppercase;
 }
 
-body {
-	/* background-image: url(asset-path('orange-background.jpg')); */
-	
-}
-
-
-.nav.navbar-nav.navbar-left li a span{
-    color: black;
+/* Footer always on the bottom of the page using https://codepen.io/cbracco/pen/zekgx */
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
 }

@@ -1,2 +1,10 @@
 %h1= t('.title')
 %p= t('.welcome')
+
+%table
+  %tbody
+    - @albums.each do |album|
+      %tc
+        %td= image_tag album.image.url(:thumb)
+
+%br

@@ -7,19 +7,19 @@
           %li= msg
 
   .field
-    = f.label t('artist') + ":"
+    = f.label t('albums.artist_form')
     = f.collection_select :artist_id, Artist.all, :id, :name
   .field
-    = f.label t('genre') + ":"
+    = f.label t('albums.genre_form')
     = f.collection_select :genre_id, Genre.all, :id, :genre
   .field
-    = f.label t('name') + ":"
+    = f.label t('home.contact.name')
     = f.text_field :name
   .field
-    = f.label t('albums.year') + ":"
+    = f.label t('albums.year_form')
     = f.number_field :year
   .field
-    = f.label t('albums.artwork') + ":"
+    = f.label t('albums.artwork_form')
     = f.file_field :image
   .actions
     = f.submit t('save')

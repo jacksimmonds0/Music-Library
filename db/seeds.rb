@@ -19,3 +19,6 @@ album.delete if default
 
 albums = Album.create([artist: artist, genre: genre, name: 'Default Album', year: 2016, tracks: 10])
 =end
+
+artist1, artist2, artist3, artist4 = Artist.new
+

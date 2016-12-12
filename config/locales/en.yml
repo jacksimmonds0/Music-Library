@@ -23,6 +23,8 @@ en:
   app_title: Music Library
   app_description: A place to keep and organise all of your music
 
+  creator: Jack Simmmonds
+
   artist: Artist
   album: Album
   song: Song
@@ -38,6 +40,21 @@ en:
   listing: Listing
   new: New
   confirm_message: Are you sure?
+
+  listing_albums: Listing Albums
+  listing_artists: Listing Artists
+  listing_songs: Listing Songs
+  listing_genres: Listing Genres
+
+  new_album: New Album
+  new_artist: New Artist
+  new_song: New Song
+  new_genre: New Genre
+
+  editing_album: Editing Album
+  editing_artist: Editing Artist
+  editing_song: Editing Song
+  editing_genre: Editing Genre
 
   incorrect_duration: " is invalid, must be input in the format of mm:ss"
 
@@ -72,11 +89,22 @@ en:
    year: Year
    tracks: Tracks
 
+   artist_form: "Artist:"
+   genre_form: "Genre:"
+   year_form: "Year:"
+   tracks_form: "Tracks:"
+   artwork_form: "Artwork:"
+
   artists:
    label: Label
-   
+
+   label_form: "Label:"
+
   songs:
    duration: Duration
+
+   album_form: "Album:"
+   duration_form: "Duration:"
 
   shared:
    artists: Artists
@@ -84,7 +112,3 @@ en:
    songs: Songs
    genres: Genres
    contact: Contact
-
-   
-    
-

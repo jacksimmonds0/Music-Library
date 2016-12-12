@@ -1,13 +1,13 @@
 %p#notice= notice
 
 %p
-  %b= t('album') + ":"
+  %b= t('songs.album_form')
   = @song.album.name
 %p
-  %b= t('name') + ":"
+  %b= t('home.contact.name')
   = @song.name
 %p
-  %b= t('songs.duration') + ":"
+  %b= t('songs.duration_form')
   = @song.duration
 
 = link_to t('edit'), edit_song_path(@song)

@@ -7,13 +7,13 @@
           %li= msg
 
   .field
-    = f.label t('name') + ":"
+    = f.label t('home.contact.name')
     = f.text_field :name
   .field
-    = f.label t('year') + ":"
+    = f.label t('albums.year_form')
     = f.number_field :year
   .field
-    = f.label t('artists.label') + ":"
+    = f.label t('artists.label_form')
     = f.text_field :label
   .actions
     = f.submit t('save')

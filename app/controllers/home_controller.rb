@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def home
+  	# adding all of the albums to be accessed in the home page
+  	@albums = Album.all
   end
 
   def contact

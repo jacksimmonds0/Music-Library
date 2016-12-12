@@ -1,13 +1,13 @@
 %p#notice= notice
 
 %p
-  %b= t('name') + ":"
+  %b= t('home.contact.name')
   = @artist.name
 %p
-  %b= t('year') + ":"
+  %b= t('albums.year_form')
   = @artist.year
 %p
-  %b= t('artists.label')
+  %b= t('artists.label_form')
   = @artist.label
 
 = link_to t('edit'), edit_artist_path(@artist)

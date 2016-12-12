@@ -7,13 +7,13 @@
           %li= msg
 
   .field
-    = f.label :album
+    = f.label t('songs.album_form')
     = f.collection_select :album_id, Album.all, :id, :name
   .field
-    = f.label :name
+    = f.label t('home.contact.name')
     = f.text_field :name
   .field
-    = f.label :duration
+    = f.label t('songs.duration_form')
     = f.text_field :duration
   .actions
     = f.submit 'Save'

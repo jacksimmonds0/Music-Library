@@ -5,11 +5,9 @@ one:
   genre: one
   name: MyString
   year: 1901
-  tracks: 1
 
 two:
   artist: one
   genre: one
   name: MyString
   year: 1901
-  tracks: 1

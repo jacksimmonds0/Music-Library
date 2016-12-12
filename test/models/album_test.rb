@@ -24,7 +24,6 @@ class AlbumTest < ActiveSupport::TestCase
   	album.genre = @genre
   	album.name = "Album"
   	album.year = 2016
-  	album.tracks = 12
   	
   	album.save
   	assert album.valid?

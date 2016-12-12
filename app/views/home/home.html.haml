@@ -5,6 +5,6 @@
   %tbody
     - @albums.each do |album|
       %tc
-        %td= image_tag album.image.url(:thumb)
+        %td{:id => "content"}= image_tag album.image.url(:thumb)
 
 %br
